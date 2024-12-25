@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p>
+        This Privacy Policy describes how <strong>Bhagavad Gita Telugu App</strong> ("we," "our," or "us") collects, uses, and protects your information when you use our mobile application.
+    </p>
+
+    <h2>Information We Collect</h2>
+    <p>
+        We do not collect any personally identifiable information ("PII") from users. The app may collect non-personal data such as crash reports, usage statistics, and device information to improve the user experience.
+    </p>
+
+    <h2>How We Use Collected Information</h2>
+    <p>
+        Any non-personal information collected is used to:
+    </p>
+    <ul>
+        <li>Enhance app functionality and performance.</li>
+        <li>Identify and resolve technical issues.</li>
+        <li>Analyze app usage trends.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>
+        The app may use third-party services to provide additional functionality or analytics. These services are governed by their respective privacy policies. Examples include:
+    </p>
+    <ul>
+        <li>Google Play Services</li>
+        <li>Firebase Analytics</li>
+    </ul>
+
+    <h2>Data Security</h2>
+    <p>
+        We are committed to protecting your information. While we do not collect sensitive personal data, we take precautions to secure any non-personal data collected through third-party services.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+        The app is not intended for children under the age of 13. We do not knowingly collect personal information from children.
+    </p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>
+        We may update this Privacy Policy from time to time. Any changes will be reflected on this page, and we encourage you to review it periodically.
+    </p>
+
+    <h2>Contact Us</h2>
+    <p>
+        If you have any questions or concerns about this Privacy Policy, please contact us at:
+    </p>
+    <p>
+        Email: <a href="mailto:akuladatta@gmail.com">akuladatta@gmail.com</a>
+    </p>
+
+    <p>
+        Last updated: December 25, 2024
+    </p>
+</body>
+</html>
