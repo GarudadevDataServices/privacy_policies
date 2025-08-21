@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-20px, -20px); }
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 50px 40px;
+        }
+
+        .last-updated {
+            text-align: right;
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 30px;
+            background: #f8f9ff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            float: right;
+        }
+
+        .section {
+            margin-bottom: 35px;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+            clear: both;
+        }
+
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            color: #555;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin: 20px 0 10px 20px;
+            list-style-type: disc;
+        }
+
+        .section li {
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            position: relative;
+            transition: all 0.3s ease;
+            list-style: none;
+        }
+
+        .section li:hover {
+            background: #e8f4fd;
+            transform: translateX(5px);
+        }
+
+        .section li::before {
+            content: '•';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #667eea;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .contact-section h2 {
+            color: white;
+            border-bottom-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-section h2::after {
+            background: white;
+        }
+
+        .contact-section p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-section li {
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: white;
+            color: white;
+        }
+
+        .contact-section li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-section li::before {
+            background: white;
+            color: #667eea;
+        }
+
+        .contact-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .contact-section ul li {
+            list-style: none;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-section a {
+            color: white;
+            font-weight: 500;
+        }
+
+        .contact-section a:hover {
+            color: #ffd700;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+
+            .section li {
+                padding: 12px 15px;
+            }
+
+            .last-updated {
+                float: none;
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Accessibility improvements */
+        .section:focus-within {
+            outline: 2px solid #667eea;
+            outline-offset: 2px;
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .container {
+                box-shadow: none;
+                background: white;
+            }
+            
+            .header {
+                background: #f0f0f0 !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Terms and Conditions</h1>
+        </div>
+
+        <div class="content">
+            <p class="last-updated">Last updated: August 21, 2025</p>
+
+            <div class="section">
+                <h2>1. Introduction</h2>
+                <p>Welcome to [Your App Name]! These Terms and Conditions ("Terms") govern your use of our mobile application and the services provided through it (collectively, the "Service").</p>
+                <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.</p>
+            </div>
+
+            <div class="section">
+                <h2>2. Intellectual Property</h2>
+                <p>The Service and its original content, features, and functionality are and will remain the exclusive property of [Your Company Name] and its licensors. The Service is protected by copyright, trademark, and other laws of both the [Your Country] and foreign countries.</p>
+                <p>Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of [Your Company Name].</p>
+            </div>
+
+            <div class="section">
+                <h2>3. User Accounts</h2>
+                <p>When you create an account with us, you must provide us with information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</p>
+                <p>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</p>
+                <p>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p>
+            </div>
+
+            <div class="section">
+                <h2>4. Prohibited Uses</h2>
+                <p>You may use the Service only for lawful purposes and in accordance with the Terms. You agree not to use the Service:</p>
+                <ul>
+                    <li>In any way that violates any applicable national or international law or regulation.</li>
+                    <li>For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way by exposing them to inappropriate content or otherwise.</li>
+                    <li>To transmit, or procure the sending of, any advertising or promotional material, including any "junk mail," "chain letter," "spam," or any other similar solicitation.</li>
+                    <li>To impersonate or attempt to impersonate [Your Company Name], a [Your Company Name] employee, another user, or any other person or entity.</li>
+                    <li>In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity.</li>
+                    <li>To engage in any other conduct that restricts or inhibits anyone's use and enjoyment of the Service, or which, as determined by us, may harm or offend [Your Company Name] or users of the Service or expose them to liability.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>5. Termination</h2>
+                <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                <p>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Limitation of Liability</h2>
+                <p>In no event shall [Your Company Name], nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use, or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence), or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Disclaimer</h2>
+                <p>Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance.</p>
+                <p>[Your Company Name] does not warrant that a) the Service will function uninterrupted, secure, or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.</p>
+            </div>
+
+            <div class="section">
+                <h2>8. Governing Law</h2>
+                <p>These Terms shall be governed and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions.</p>
+                <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
+            </div>
+
+            <div class="section">
+                <h2>9. Changes to Terms</h2>
+                <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+                <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+            </div>
+
+            <div class="section contact-section">
+                <h2>10. Contact Us</h2>
+                <p>If you have any questions about these Terms, please contact us:</p>
+                <ul>
+                    <li>By email: vsujay54@gmail.com</li>
+                    <li>By visiting this page on our website: [Link to your contact page, if applicable]</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
